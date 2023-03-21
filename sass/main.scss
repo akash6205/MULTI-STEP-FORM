@@ -150,3 +150,67 @@ body{
         }
     }
 }
+
+@media (min-width:1020px){
+    body{
+        display: grid;
+        place-content: center;
+    }
+    .comtainer{
+        display: flex;
+        background-color: white;
+        padding: .8rem;
+        border-radius: 12px;
+        height: 570px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .steps{
+            background-image: url(/assets/images/bg-sidebar-desktop.svg);
+            background-size: 260px;
+            height: 100%;
+            flex-direction: column;
+            width: 60%;
+            justify-content: flex-start;
+            padding-top:1rem;
+
+            
+            & .step-wrapper{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: .6rem;
+                transform: translate(2rem, 1rem);
+
+                & div{
+                    display: block;
+                    color: var(--clr-Neutral-100);
+    
+                    & p:first-child{
+                        text-transform: uppercase;
+                        color: var(--clr-primary-blue-100);
+                    }
+                    & p:last-child{
+                       font-weight:500 ;
+                    }
+                }
+            }
+            & .step{
+                margin-top:0;
+            }
+        }
+        .info{
+            transform: translateY(0);
+
+            & .action{
+                height: 95%;
+
+                & #form{
+                    margin-top: 4rem;
+                }
+            }
+        }
+    }
+}

@@ -137,4 +137,61 @@ body {
 }
 .comtainer .info .buttons button:focus, .comtainer .info .buttons button:hover {
   background-color: var(--clr-primary-blue-300);
+}
+
+@media (min-width: 1020px) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+  .comtainer {
+    display: flex;
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 12px;
+    height: 570px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .comtainer .steps {
+    background-image: url(/assets/images/bg-sidebar-desktop.svg);
+    background-size: 260px;
+    height: 100%;
+    flex-direction: column;
+    width: 60%;
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+  .comtainer .steps .step-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem;
+    transform: translate(2rem, 1rem);
+  }
+  .comtainer .steps .step-wrapper div {
+    display: block;
+    color: var(--clr-Neutral-100);
+  }
+  .comtainer .steps .step-wrapper div p:first-child {
+    text-transform: uppercase;
+    color: var(--clr-primary-blue-100);
+  }
+  .comtainer .steps .step-wrapper div p:last-child {
+    font-weight: 500;
+  }
+  .comtainer .steps .step {
+    margin-top: 0;
+  }
+  .comtainer .info {
+    transform: translateY(0);
+  }
+  .comtainer .info .action {
+    height: 95%;
+  }
+  .comtainer .info .action #form {
+    margin-top: 4rem;
+  }
 }/*# sourceMappingURL=main.css.map */
