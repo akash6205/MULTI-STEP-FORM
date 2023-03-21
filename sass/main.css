@@ -58,6 +58,8 @@ body {
   background-color: var(--clr-Neutral-100);
   margin-inline: auto;
   padding: 2rem 1.6rem;
+  border-radius: 0.4rem;
+  transform: translateY(-5.2rem);
 }
 .comtainer .info .action .title {
   color: var(--clr-primary-blue-400);
@@ -75,9 +77,64 @@ body {
   flex-direction: column;
   margin-top: 1rem;
 }
-.comtainer .info #form .lable {
+.comtainer .info #form .input-wrapper {
+  position: relative;
+}
+.comtainer .info #form .input-wrapper::before {
+  content: "This field is required";
+  position: absolute;
+  right: 0;
+  color: var(--clr-primary-red-100);
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: none;
+}
+.comtainer .info #form .input-wrapper .lable {
   color: var(--clr-primary-blue-400);
   font-size: 14px;
   font-weight: 500;
   padding: 8px 0;
+}
+.comtainer .info #form .input-wrapper input {
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--clr-primary-blue-400);
+  font-family: "Ubuntu", sans-serif;
+  border: 1px solid var(--clr-Neutral-400);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border 400ms ease;
+  position: relative;
+  width: 100%;
+}
+.comtainer .info #form .input-wrapper input::-moz-placeholder {
+  color: var(--clr-Neutral-400);
+}
+.comtainer .info #form .input-wrapper input::placeholder {
+  color: var(--clr-Neutral-400);
+}
+.comtainer .info #form .input-wrapper input:focus {
+  border: 1px solid var(--clr-primary-blue-300);
+}
+.comtainer .info .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.comtainer .info .buttons button {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  background-color: var(--clr-primary-blue-400);
+  color: var(--clr-Neutral-100);
+  font-weight: 500;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.4rem;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+.comtainer .info .buttons button:focus, .comtainer .info .buttons button:hover {
+  background-color: var(--clr-primary-blue-300);
 }/*# sourceMappingURL=main.css.map */
