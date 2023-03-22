@@ -75,12 +75,43 @@
                             >
                         <p class="required">this field is requried</p>
                     </div>
-                    <div class="buttons">
-                        <button style="display: none;" class="button" type="button"> go back</button>
-                        <button id="button" type="button">Next Step</button>
+                </form>
+                <div class="plans-box">
+                    <div class="plans-wrapper">
+                        <div class="plan" id="arcade">
+                            <img src="assets/images/icon-arcade.svg" alt="" class="logo">
+                            <div class="plan-value">
+                                <p>Arcade</p>
+                                <p>$9/mo</p>
+                            </div>
+                        </div>
+                        <div class="plan selected" id="advance">
+                            <img src="assets/images/icon-advanced.svg" alt="" class="logo">
+                            <div class="plan-value">
+                                <p>advance</p>
+                                <p>$12/mo</p>
+                            </div>
+                        </div>
+                        <div class="plan" id="pro">
+                            <img src="assets/images/icon-pro.svg" alt="" class="logo">
+                            <div class="plan-value">
+                                <p>Pro</p>
+                                <p>$15/mo</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div>this field is required</div> -->
-                        </form>
+                    <div class="billing-option">
+                        <p id="month-plan" class="selected-plan">Monthly</p>
+                        <div class="switch">
+                            <span data-type="monthly"></span>
+                        </div>
+                        <p id="year-plan">Yearly</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="go-back" type="button"> go back</button>
+                    <button id="button" type="button">Next Step</button>
+                </div>
             </div>
             
         </div>
