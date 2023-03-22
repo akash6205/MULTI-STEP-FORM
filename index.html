@@ -49,37 +49,42 @@
                     <div class="input-wrapper">
                         <label class="lable" for="name">Name</label>
                         <input type="text"
-                            name=""
+                            name="name"
                             id="name"
                             placeholder="e.g. Stephen King"
                             >
+                        <p class="required">this field is requried</p>
                     </div>
 
-                    <div class="input-wrapper">
-                    <label class="lable" for="email">Email Address</label>
-                    <input type="email"
-                           name=""
-                           id="email"
-                           placeholder="e.g. stephenking@lorem.com"
-                           >
+                        <div class="input-wrapper">
+                        <label class="lable" for="email">Email Address</label>
+                        <input type="email"
+                            name="email"
+                            id="email"
+                            placeholder="e.g. stephenking@lorem.com"
+                            >
+                        <p class="required">this field is requried</p>
                     </div> 
 
                     <div class="input-wrapper">
                         <label class="lable" for="number">Phone Number</label>
-                        <input type="number"
-                            name=""
+                        <input type="text"
+                            name="number"
                             id="number"
                             placeholder="e.g. +1 234 567 890"
                             >
+                        <p class="required">this field is requried</p>
+                    </div>
+                    <div class="buttons">
+                        <button style="display: none;" class="button" type="button"> go back</button>
+                        <button id="button" type="button">Next Step</button>
                     </div>
                     <!-- <div>this field is required</div> -->
                         </form>
             </div>
-            <div class="buttons">
-                <!-- <a href="#">go back</a> -->
-                <button type="submit">Next Step</button>
-            </div>
+            
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

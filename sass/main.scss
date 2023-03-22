@@ -34,6 +34,7 @@ body{
         gap: 1.4rem;
         justify-content: center;
 
+       .step-wrapper{
         & div{
             display: none;
         }
@@ -55,6 +56,7 @@ body{
             background-color: var(--clr-primary-blue-200);
             border: none;
         }
+       }
     }
 
     .info{
@@ -86,6 +88,7 @@ body{
 
             .input-wrapper{
                 position: relative;
+                margin-bottom: 1rem;
 
                 &::before{
                     content: 'This field is required';
@@ -100,7 +103,8 @@ body{
                     color: var(--clr-primary-blue-400);
                     font-size: 14px;
                     font-weight: 500;
-                    padding:8px 0;
+                    
+                    // margin-bottom: 1rem;
                 }
                 input{
                     padding: .8rem;
@@ -110,7 +114,7 @@ body{
                     font-family: 'Ubuntu', sans-serif;
                     border: 1px solid var(--clr-Neutral-400);
                     border-radius: 8px;
-                    margin-bottom:1rem;
+                    margin-top:.3rem;
                     outline: none;
                     transition: border 400ms ease;
                     position: relative;
@@ -123,12 +127,21 @@ body{
                         border: 1px solid var(--clr-primary-blue-300);
                     }
                 }
+                .required{
+                    text-align: right;
+                    font-size: .8rem;
+                    color: var(--clr-primary-red-100);
+                    font-weight: 700;
+                    padding-top: .4rem;
+                    text-transform: capitalize;
+                    display: none;
+                }
             }            
         }
         .buttons{
             display: flex;
             align-items: center;
-            justify-content: right;
+            justify-content: space-between;
 
             button{
                 outline: none;
@@ -172,7 +185,7 @@ body{
             background-size: 260px;
             height: 100%;
             flex-direction: column;
-            width: 60%;
+            width: 450px;
             justify-content: flex-start;
             padding-top:1rem;
 
@@ -196,10 +209,11 @@ body{
                        font-weight:500 ;
                     }
                 }
+                .step{
+                    margin-top:0;
+                }
             }
-            & .step{
-                margin-top:0;
-            }
+            
         }
         .info{
             transform: translateY(0);

@@ -32,10 +32,10 @@ body {
   gap: 1.4rem;
   justify-content: center;
 }
-.comtainer .steps div {
+.comtainer .steps .step-wrapper div {
   display: none;
 }
-.comtainer .steps .step {
+.comtainer .steps .step-wrapper .step {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -48,7 +48,7 @@ body {
   font-size: 0.9rem;
   font-weight: 500;
 }
-.comtainer .steps .active {
+.comtainer .steps .step-wrapper .active {
   color: var(--clr-primary-blue-400);
   background-color: var(--clr-primary-blue-200);
   border: none;
@@ -79,6 +79,7 @@ body {
 }
 .comtainer .info #form .input-wrapper {
   position: relative;
+  margin-bottom: 1rem;
 }
 .comtainer .info #form .input-wrapper::before {
   content: "This field is required";
@@ -93,7 +94,6 @@ body {
   color: var(--clr-primary-blue-400);
   font-size: 14px;
   font-weight: 500;
-  padding: 8px 0;
 }
 .comtainer .info #form .input-wrapper input {
   padding: 0.8rem;
@@ -103,7 +103,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   border: 1px solid var(--clr-Neutral-400);
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-top: 0.3rem;
   outline: none;
   transition: border 400ms ease;
   position: relative;
@@ -118,10 +118,19 @@ body {
 .comtainer .info #form .input-wrapper input:focus {
   border: 1px solid var(--clr-primary-blue-300);
 }
+.comtainer .info #form .input-wrapper .required {
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--clr-primary-red-100);
+  font-weight: 700;
+  padding-top: 0.4rem;
+  text-transform: capitalize;
+  display: none;
+}
 .comtainer .info .buttons {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
 }
 .comtainer .info .buttons button {
   outline: none;
@@ -160,7 +169,7 @@ body {
     background-size: 260px;
     height: 100%;
     flex-direction: column;
-    width: 60%;
+    width: 450px;
     justify-content: flex-start;
     padding-top: 1rem;
   }
@@ -182,7 +191,7 @@ body {
   .comtainer .steps .step-wrapper div p:last-child {
     font-weight: 500;
   }
-  .comtainer .steps .step {
+  .comtainer .steps .step-wrapper .step {
     margin-top: 0;
   }
   .comtainer .info {
